@@ -1,0 +1,12 @@
+export const toggleDarkMode = document.querySelector(".btn-mode");
+export const app = document.querySelector(".app");
+export const buttonAdd = document.querySelector(".boutton__add");
+export const containerCards = document.querySelector(".cards");
+export const inputTask = document.querySelector(".inputtask");
+export const clearTasks = document.querySelectorAll(".clear");
+export const clearButton = document.querySelector(".clear");
+export const itemsLeft = document.querySelector(".items_check");
+export const comletedButton = document.querySelector(".completed");
+export const activeButton = document.querySelector(".active");
+export const allTasksButton = document.querySelector(".all");
+// export const cards = () => document.querySelectorAll(".card");

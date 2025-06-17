@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind (for dev only) -->
+
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="app group">
+      <div class="container__app">
+        <div class="header">
+          <div class="header__tittle">
+            <h1 class="tittle font-bold">TODO</h1>
+            <button class="btn-mode">
+              <i class="fa-solid fa-moon text-5xl"></i>
+              <i class="las la-sun text-5xl hidden"></i>
+            </button>
+          </div>
+          <form>
+            <input
+              type="text"
+              placeholder="Creat a new todo..."
+              id="search"
+              class="inputtask"
+              minlength="1"
+            />
+            <button class="boutton__add" tabindex="0" type="submit">
+              + Add to card
+            </button>
+          </form>
+        </div>
+        <div class="container-cards shadow-2xl">
+          <ul class="cards group"></ul>
+          <div class="justify-between px-14 info">
+            <button
+              class="items_check text-gray-400 hover:text-gray-700 group-[.app--isDark]:hover:text-white : hover:font-medium cursor-pointer transition-colors"
+              tabindex="0"
+            >
+              items left
+            </button>
+            <div class="state flex gap-4">
+              <button
+                class="all text-gray-400 focus:text-blue-500 hover:text-gray-700 group-[.app--isDark]:hover:text-white hover:font-medium cursor-pointer transition-colors"
+                tabindex="0"
+              >
+                All
+              </button>
+              <button
+                class="active text-gray-400 focus:text-blue-500 hover:text-gray-700 group-[.app--isDark]:hover:text-white hover:font-medium cursor-pointer transition-colors"
+                tabindex="0"
+              >
+                Active
+              </button>
+              <button
+                class="completed text-gray-400 focus:text-blue-500 hover:text-gray-700 group-[.app--isDark]:hover:text-white hover:font-medium cursor-pointer transition-colors"
+                tabindex="0"
+              >
+                completed
+              </button>
+            </div>
+            <button
+              class="clear text-gray-400 hover:text-gray-700 focus:text-blue-500 group-[.app--isDark]:hover:text-white hover:font-medium cursor-pointer transition-colors"
+              tabindex="0"
+            >
+              clear completed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scriptes/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
